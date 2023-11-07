@@ -18,11 +18,17 @@ body {
 }
 
 #card {
+  overflow: hidden;
+  position: relative;
   background-color: #fff;
   height: 480px;
   width: 350px;
-  border-radius: 10px;
-  border: 1px solid #111;
+  border-radius: 15px;
+  border: 2px solid #111;
+}
+
+#storya::-webkit-scrollbar {
+  display: none;
 }
 
 #storya {
@@ -41,6 +47,7 @@ body {
   width: 80px;
   border-radius: 50%;
   display: inline-block;
+  margin-right: 5px;
 }
 
 .story img {
@@ -49,4 +56,13 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+}
+
+#full-screen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  background-size: cover;
+  background-position: center;
 }
